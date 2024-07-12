@@ -20,6 +20,7 @@ body {
   --cor-azul: #2271d1;
   --cor-cinza: #a5a5a5;
   --cor-branca: #fffcfc;
+  --cor-box-sizing: 0px 5px 29px 0px var(--cor-azul);
 
   --cor-secundaria-preto: #00000071;
   --cor-secundaria-azul: #6bd1ff;

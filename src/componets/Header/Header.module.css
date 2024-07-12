@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1rem;
-  box-shadow: 2px 5px 5px var(--cor-azul);
+  box-shadow: var(--cor-box-sizing);
   align-items: center;
   background-color: var(--cor-secundaria-preto);
 }
@@ -14,11 +14,11 @@
   transition: var(--transicao);
 }
 
+.cabecalho p:hover {
+  transform: var(--scale);
+}
+
 .cabecalho ul {
   display: flex;
   gap: 20px;
-}
-
-p:hover {
-  transform: var(--scale);
 }

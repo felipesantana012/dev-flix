@@ -1,0 +1,24 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 5px 5px var(--cor-azul);
+  align-items: center;
+  background-color: var(--cor-secundaria-preto);
+}
+
+.cabecalho p {
+  font-size: 28px;
+  color: var(--cor-azul);
+  font-weight: 700;
+  transition: var(--transicao);
+}
+
+.cabecalho ul {
+  display: flex;
+  gap: 20px;
+}
+
+p:hover {
+  transform: var(--scale);
+}

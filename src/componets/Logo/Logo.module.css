@@ -1,0 +1,14 @@
+.logo p,
+strong {
+  font-size: 1.8rem;
+  color: var(--cor-azul);
+  font-weight: 700;
+}
+
+.logo {
+  transition: var(--transicao);
+}
+
+.logo:hover {
+  transform: var(--scale);
+}

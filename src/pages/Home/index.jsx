@@ -1,7 +1,7 @@
-import React from "react";
+import Carrosel from "../../componets/Carrosel";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <Carrosel />;
 };
 
 export default Home;

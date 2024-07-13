@@ -8,6 +8,7 @@
   font-family: var(--fonte-principal);
   list-style: none;
   text-decoration: none;
+  font-size: clamp(1rem, 1.1vw, 4rem);
 }
 
 body {
@@ -15,12 +16,29 @@ body {
   color: var(--cor-branca);
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+a {
+  font-size: 1rem;
+}
+
 :root {
   --cor-preto: #262626;
   --cor-azul: #2271d1;
   --cor-cinza: #a5a5a5;
   --cor-branca: #fffcfc;
-  --cor-box-sizing: 0px 5px 29px 0px var(--cor-azul);
+  --cor-box-sizing: 2px 2px 19px 2px var(--cor-azul);
 
   --cor-secundaria-preto: #00000071;
   --cor-secundaria-azul: #6bd1ff;

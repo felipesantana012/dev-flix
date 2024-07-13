@@ -1,13 +1,14 @@
 .btn {
-  min-width: 150px;
-  height: 44px;
-  border-radius: 10px;
+  min-width: 7rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
   background-color: transparent;
   text-align: center;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: var(--transicao);
+  white-space: nowrap;
 }
 
 .btn:hover {

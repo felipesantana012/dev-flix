@@ -1,14 +1,10 @@
 import styles from "./Footer.module.css";
-import { Link } from "react-router-dom";
+import Logo from "../Logo";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Link to="/">
-        <p>
-          Dev<strong>Flix</strong>
-        </p>
-      </Link>
+      <Logo />
     </footer>
   );
 };

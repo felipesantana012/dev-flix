@@ -1,16 +1,12 @@
 import Botao from "../Botao";
+import Logo from "../Logo";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={styles.cabecalho}>
-      <Link to="/">
-        <p>
-          Dev<strong>Flix</strong>
-        </p>
-      </Link>
-
+      <Logo />
       <ul>
         <li>
           <Link to="/">

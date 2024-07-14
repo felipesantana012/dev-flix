@@ -1,29 +1,45 @@
 import styles from "./Carrosel.module.css";
-import imgTeste from "./player.png";
-// import videosData from "../../json/db.json";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
+import videosData from "../../json/db.json";
 
 const Carrosel = () => {
-  return (
-    <section className={styles.carrosel}>
-      <div className={styles.conteudo_carrosel}>
-        <div className={styles.descricoes}>
-          <h2>Front End</h2>
-          <h3>Seo Com React</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo vel
-            repellendus sapiente laboriosam eum accusamus nostrum aut vitae
-            soluta assumenda voluptatibus, blanditiis, iure accusantium, officia
-            quis? Aspernatur laudantium esse vero!
-          </p>
-        </div>
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    setData(videosData.videos);
+  }, []);
 
-        <article className={styles.imagem}>
-          <Link to="novoVideo/ss">
-            <img src={imgTeste} alt="teste" />
-          </Link>
-        </article>
-      </div>
+  return (
+    <section className={styles.container}>
+      <Swiper
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        navigation
+        className={styles.carroselContainer}
+      >
+        {data.map((item) => (
+          <SwiperSlide
+            key={item.id}
+            style={{ backgroundImage: `url(${item.capa})` }}
+            className={styles.carroselElemento}
+          >
+            <div className={styles.conteudo_carrosel}>
+              <div className={styles.descricoes}>
+                <h2>{item.categoria}</h2>
+                <h3>{item.titulo}</h3>
+                <p>{item.descricao}</p>
+              </div>
+
+              <article className={styles.imagem}>
+                <Link to={item.link}>
+                  <img src={item.capa} alt="teste" />
+                </Link>
+              </article>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

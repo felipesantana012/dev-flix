@@ -6,7 +6,7 @@
         "categoria": "Front-End",
         "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
         "link": "https://www.youtube.com/embed/ypvGqZGJBls",
-        "Descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
     },
     {
         "id": 2,
@@ -14,7 +14,7 @@
         "categoria": "Front-End",
         "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img1.png",
         "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
-        "Descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
     },
     {
         "id": 3,
@@ -22,7 +22,7 @@
         "categoria": "Front-End",
         "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img4.png",
         "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
-        "Descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
     },
     {
         "id": 4,
@@ -30,7 +30,7 @@
         "categoria": "Front-End",
         "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
          "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
-        "Descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
     }
 
 ],

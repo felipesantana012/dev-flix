@@ -1,0 +1,16 @@
+.botao {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.botao:active {
+  opacity: 0.5;
+}

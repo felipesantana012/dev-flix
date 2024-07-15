@@ -1,0 +1,50 @@
+.card {
+  min-width: 15rem;
+  width: 25%;
+  max-height: 15rem;
+  background-color: var(--cor-secundaria-preto);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: 0.3rem;
+  overflow: hidden;
+  border: 4px solid var(--cor-azul);
+}
+
+.imagem {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+.imagem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--cor-box-sizing) inset;
+  pointer-events: none;
+}
+
+.imagem img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.imagem h3 {
+  background-color: rgba(0, 0, 0, 0.377);
+  color: var(--cor-branca);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}

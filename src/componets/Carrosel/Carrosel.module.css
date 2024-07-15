@@ -47,21 +47,6 @@
   flex-direction: column;
 }
 
-.descricoes h2 {
-  width: 50%;
-  min-width: 12rem;
-  text-align: center;
-  font-size: 2.1rem;
-  font-weight: 800;
-  background-color: var(--cor-secundaria-azul);
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 1rem;
-}
-
 .descricoes h3 {
   font-size: 2rem;
   font-weight: 400;

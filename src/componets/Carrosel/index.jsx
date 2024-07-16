@@ -6,7 +6,6 @@ import NomeCategoria from "../NomeCategoria";
 
 const Carrosel = () => {
   const data = useVideosData();
-
   return (
     <section className={styles.container}>
       <Swiper

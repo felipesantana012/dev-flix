@@ -1,7 +1,11 @@
-import React from "react";
+import styles from "react";
 
 const NovoVideo = () => {
-  return <div>NovoVideo</div>;
+  return (
+    <div>
+      <h1>NovoVideo</h1>
+    </div>
+  );
 };
 
 export default NovoVideo;

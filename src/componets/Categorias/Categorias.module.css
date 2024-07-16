@@ -1,5 +1,4 @@
 .container {
-  border: 4px solid rgb(0, 255, 98);
   margin: 2% 2% 8% 2%;
   display: flex;
   flex-direction: column;
@@ -7,6 +6,8 @@
 }
 
 .containerCategoria {
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {

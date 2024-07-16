@@ -1,17 +1,15 @@
 import styles from "./Card.module.css";
 import BotaoDeAcoes from "../BotaoDeAcoes";
+import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ capa, titulo, link }) => {
   return (
     <div className={styles.card}>
       <article className={styles.imagem}>
-        <img
-          src={
-            "https://i.pinimg.com/564x/08/86/77/0886779176db12da5565ca4b9541e2b8.jpg"
-          }
-          alt=""
-        />
-        <h3>Testando</h3>
+        <Link to={link}>
+          <img src={capa} alt={titulo} />
+        </Link>
+        <h3>{titulo}</h3>
       </article>
 
       <div className={styles.btns}>

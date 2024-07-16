@@ -1,0 +1,21 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  flex: 1 1 48%; /* Faz com que os inputs ocupem a largura disponível, mas não menos que 48% da sub-container */
+  min-width: 20rem;
+}
+
+.select select {
+  font-weight: 200;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline-style: none;
+  border: var(--bordas-principal);
+  background-color: transparent;
+  color: var(--cor-branca);
+  opacity: 0.6;
+}

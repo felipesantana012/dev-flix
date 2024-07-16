@@ -1,0 +1,70 @@
+.conatiner {
+  width: 80%;
+  max-width: 1000px;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.descricao {
+  text-align: center;
+}
+
+.descricao h1 {
+  font-weight: 900;
+}
+
+.descricao p {
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.fomulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.fomulario h2 {
+  border-top: var(--bordas-principal);
+  border-bottom: var(--bordas-principal);
+  padding: 0.5rem 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputDescricao {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.inputDescricao textarea {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline-style: none;
+  border: var(--bordas-principal);
+  background-color: transparent;
+  color: var(--cor-branca);
+}
+
+@media screen and (max-width: 700px) {
+  .inputDescricao {
+    width: 100%;
+  }
+}

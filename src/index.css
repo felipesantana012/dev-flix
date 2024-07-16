@@ -49,4 +49,5 @@ a {
   --fonte-principal: "Source Sans 3", sans-serif;
   --transicao: all 0.3s ease-in-out;
   --scale: scale(1.07);
+  --bordas-principal: 2px solid rgb(48, 48, 48);
 }

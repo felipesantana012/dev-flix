@@ -1,0 +1,22 @@
+.naoEncotrada {
+  width: 100%;
+  height: 80vh !important;
+  position: relative;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;
+}
+
+.naoEncotrada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.naoEncotrada h1 {
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.5rem;
+  color: var(--cor-cinza);
+}

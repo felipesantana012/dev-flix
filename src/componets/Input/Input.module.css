@@ -17,3 +17,16 @@
   background-color: transparent;
   color: var(--cor-branca);
 }
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup.error input {
+  border-color: var(--error);
+}
+
+.errorMessage {
+  color: var(--error);
+  font-size: 0.875rem;
+}

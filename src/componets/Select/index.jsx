@@ -1,12 +1,16 @@
 import styles from "./Select.module.css";
 
-const Select = ({ children }) => {
+const Select = ({ children, name, value, onChange, options, error }) => {
   return (
-    <label htmlFor="" className={styles.select}>
+    <label
+      htmlFor={name}
+      className={`${styles.select} ${error ? styles.error : ""}`}
+    >
       {children}
-      <select name="categorias" id="categorias">
-        <option value="">selecione uma categoría</option>
+      <select id={name} name={name} value={value} onChange={onChange}>
+        {options}
       </select>
+      {error && <p className={styles.errorMessage}>{error}</p>}
     </label>
   );
 };

@@ -1,80 +1,90 @@
 {
-    "videos":[
-
+  "videos": [
+    {
+      "categoria": "Front-End",
+      "corPrincipal": "#6BD1FF",
+      "itens": [
         {
-            "categoria":"Front-End",
-            "corPrincipal":"#6BD1FF",
-            "itens":[
-                {
-                    "id": 1,
-                    "titulo": "O labirinto do Logcat",
-                    "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
-                    "link": "https://www.youtube.com/embed/ypvGqZGJBls",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 2,
-                    "titulo": "Um componente no espaço",
-                    "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img1.png",
-                    "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 3,
-                    "titulo": "HTML e CSS",
-                    "capa": "https://i.pinimg.com/564x/48/52/6a/48526a98493907f2dc33893a718ba1df.jpg",
-                    "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 4,
-                    "titulo": "Dart, o Caçador de Andróides",
-                    "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
-                     "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                }
-            ],
-            "id":1
+          "id": 1,
+          "titulo": "O labirinto do Logcat",
+          "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
+          "link": "https://www.youtube.com/embed/ypvGqZGJBls",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
         },
-
         {
-            "categoria":"Back-End",
-            "corPrincipal":"#00C86F",
-            "itens":[
-                {
-                    "id": 1,
-                    "titulo": "Aprendendo Node JS",
-                    "capa": "https://i.pinimg.com/564x/08/86/77/0886779176db12da5565ca4b9541e2b8.jpg",
-                    "link": "https://www.youtube.com/embed/ypvGqZGJBls",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 2,
-                    "titulo": "Java Avançado",
-                    "capa": "https://i.pinimg.com/564x/07/80/c5/0780c51a8c2ee0dc821af36c9affb6cf.jpg",
-                    "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 3,
-                    "titulo": "php com laravel",
-                    "capa": "https://i.pinimg.com/564x/68/b4/c3/68b4c36f5ad39e78ee92e653f4a5e6e1.jpg",
-                    "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                },
-                {
-                    "id": 4,
-                    "titulo": "Python no Back",
-                    "capa": "https://i.pinimg.com/564x/1d/8e/7b/1d8e7b059e313fc47711d030472f1291.jpg",
-                     "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
-                    "descricao":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-                }
-            ],
-            "id":2
+          "id": 2,
+          "titulo": "Um componente no espaço",
+          "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img1.png",
+          "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        },
+        {
+          "id": 3,
+          "titulo": "HTML e CSS",
+          "capa": "https://i.pinimg.com/564x/48/52/6a/48526a98493907f2dc33893a718ba1df.jpg",
+          "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        },
+        {
+          "id": 4,
+          "titulo": "Dart, o Caçador de Andróides",
+          "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
+          "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
         }
-
-
-        
-            ]
-
+      ],
+      "id": "1"
+    },
+    {
+      "categoria": "Back-End",
+      "corPrincipal": "#00C86F",
+      "itens": [
+        {
+          "id": 1,
+          "titulo": "Aprendendo Node JS",
+          "capa": "https://i.pinimg.com/564x/08/86/77/0886779176db12da5565ca4b9541e2b8.jpg",
+          "link": "https://www.youtube.com/embed/ypvGqZGJBls",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        },
+        {
+          "id": 2,
+          "titulo": "Java Avançado",
+          "capa": "https://i.pinimg.com/564x/07/80/c5/0780c51a8c2ee0dc821af36c9affb6cf.jpg",
+          "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        },
+        {
+          "id": 3,
+          "titulo": "php com laravel",
+          "capa": "https://i.pinimg.com/564x/68/b4/c3/68b4c36f5ad39e78ee92e653f4a5e6e1.jpg",
+          "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        },
+        {
+          "id": 4,
+          "titulo": "Python no Back",
+          "capa": "https://i.pinimg.com/564x/1d/8e/7b/1d8e7b059e313fc47711d030472f1291.jpg",
+          "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "id": "e112",
+      "titulo": "ddd",
+      "categoria": "",
+      "imagem": "",
+      "video": "",
+      "descricao": ""
+    },
+    {
+      "id": "831b",
+      "titulo": "ddd",
+      "categoria": "",
+      "imagem": "",
+      "video": "",
+      "descricao": ""
+    }
+  ]
 }

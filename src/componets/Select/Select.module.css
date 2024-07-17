@@ -8,6 +8,10 @@
   min-width: 20rem;
 }
 
+.select.error select {
+  border-color: var(--error);
+}
+
 .select select {
   font-weight: 200;
   border-radius: 0.5rem;
@@ -18,4 +22,13 @@
   background-color: transparent;
   color: var(--cor-branca);
   opacity: 0.6;
+}
+
+.select select option {
+  background-color: var(--cor-secundaria-preto);
+}
+
+.errorMessage {
+  color: var(--error);
+  font-size: 0.875rem;
 }

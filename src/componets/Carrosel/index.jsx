@@ -6,6 +6,9 @@ import NomeCategoria from "../NomeCategoria";
 
 const Carrosel = () => {
   const data = useVideosData();
+  if (!Array.isArray(data)) {
+    return <p>Sem dados disponíveis para exibição</p>;
+  }
   return (
     <section className={styles.container}>
       <Swiper

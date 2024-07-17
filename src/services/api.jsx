@@ -1,10 +1,23 @@
-// import axios from "axios";
-import apiVideos from "../json/db.json";
+// services/api.jsx
+import axios from "axios";
 
-const fetchVideos = async () => {
-  // const response = await axios.get('URL_DA_API');
-  // return response.data.videos;
-  return apiVideos.videos;
+const URL_API = "http://localhost:3000/videos";
+
+export const fetchVideos = async () => {
+  try {
+    const response = await axios.get(URL_API);
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao buscar vídeos da API:", error.message);
+    throw new Error("Erro ao buscar vídeos da API");
+  }
 };
 
-export { fetchVideos };
+export const createVideo = async (videoData) => {
+  try {
+    await axios.post(URL_API, videoData);
+  } catch (error) {
+    console.error("Erro ao criar vídeo na API:", error.message);
+    throw new Error("Erro ao criar vídeo na API");
+  }
+};

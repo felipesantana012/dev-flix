@@ -46,15 +46,13 @@ import videos from "../json/db.json";
 
 // Função para buscar vídeos
 export const fetchVideos = () => {
-  // Simula uma chamada à API retornando os dados importados
   return new Promise((resolve) => {
-    setTimeout(() => resolve(videos.videos), 1000);
+    setTimeout(() => resolve(videos.videos), 500);
   });
 };
 
 // Função para adicionar um novo vídeo a uma categoria
 export const addVideoCategoria = (newVideo, qualCategoria) => {
-  // Simula uma chamada à API atualizando os dados importados
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       try {
@@ -70,6 +68,6 @@ export const addVideoCategoria = (newVideo, qualCategoria) => {
       } catch (error) {
         reject(error);
       }
-    }, 1000);
+    }, 500);
   });
 };

@@ -1,11 +1,13 @@
 import React, { createContext, useState, useEffect } from "react";
 import { fetchVideos, addVideoCategoria } from "../services/api.jsx";
+import { useLoading } from "./LoadingContext.jsx";
 
 export const VideoContext = createContext();
 
 export const VideoProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
   const [todosItens, setTodosItens] = useState([]);
+  const { showLoading, hideLoading } = useLoading();
 
   const buscarTodos = (data) => {
     const arrayTodosItens = [];
@@ -25,14 +27,24 @@ export const VideoProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchVideos();
-      setCategories(data);
+      showLoading();
+      try {
+        const data = await fetchVideos();
+        setCategories(data);
+      } finally {
+        hideLoading();
+      }
     };
 
     const fetchTodosItens = async () => {
-      const data = await fetchVideos();
-      const arrayTodosItens = buscarTodos(data);
-      setTodosItens(arrayTodosItens);
+      showLoading();
+      try {
+        const data = await fetchVideos();
+        const arrayTodosItens = buscarTodos(data);
+        setTodosItens(arrayTodosItens);
+      } finally {
+        hideLoading();
+      }
     };
 
     fetchTodosItens();
@@ -40,11 +52,16 @@ export const VideoProvider = ({ children }) => {
   }, []);
 
   const addVideo = async (newVideo, qualCategoria) => {
-    await addVideoCategoria(newVideo, qualCategoria);
-    const data = await fetchVideos();
-    const arrayTodosItens = buscarTodos(data);
-    setTodosItens(arrayTodosItens);
-    setCategories(data);
+    showLoading();
+    try {
+      await addVideoCategoria(newVideo, qualCategoria);
+      const data = await fetchVideos();
+      const arrayTodosItens = buscarTodos(data);
+      setTodosItens(arrayTodosItens);
+      setCategories(data);
+    } finally {
+      hideLoading();
+    }
   };
 
   return (

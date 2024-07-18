@@ -2,44 +2,31 @@ import styles from "./NovoVideo.module.css";
 import Botao from "../../componets/Botao";
 import Input from "../../componets/Input";
 import Select from "../../componets/Select";
-import useFetchData from "../../hooks/useFetchData";
-import { createVideo } from "../../services/api";
 import { useState } from "react";
 import ModalMensagem from "../../componets/ModalMensagem";
+import useVideos from "../../hooks/useVideos";
 
 const NovoVideo = () => {
-  const { data: categorias, loading, error } = useFetchData();
+  const { categories, addVideo } = useVideos();
 
   const [formData, setFormData] = useState({
     titulo: "",
     categoria: "",
-    imagem: "",
-    video: "",
+    capa: "",
+    link: "",
     descricao: "",
   });
 
   const [formErrors, setFormErrors] = useState({});
   const [showModal, setShowModal] = useState(false);
 
-  if (loading) {
-    return <p>Carregando...</p>;
-  }
-
-  if (error) {
-    return <p>Ocorreu um erro: {error}</p>;
-  }
-
-  if (!Array.isArray(categorias)) {
-    return <p>Sem dados disponíveis para exibição</p>;
-  }
-
   const validateForm = (formData) => {
     const errors = {};
     if (!formData.titulo) errors.titulo = "O campo título é obrigatório.";
     if (!formData.categoria)
       errors.categoria = "O campo categoria é obrigatório.";
-    if (!formData.imagem) errors.imagem = "O campo imagem é obrigatório.";
-    if (!formData.video) errors.video = "O campo vídeo é obrigatório.";
+    if (!formData.capa) errors.capa = "O campo imagem é obrigatório.";
+    if (!formData.link) errors.link = "O campo link vídeo é obrigatório.";
     if (!formData.descricao)
       errors.descricao = "O campo descrição é obrigatório.";
     return errors;
@@ -54,8 +41,8 @@ const NovoVideo = () => {
     setFormData({
       titulo: "",
       categoria: "",
-      imagem: "",
-      video: "",
+      capa: "",
+      link: "",
       descricao: "",
     });
     setFormErrors({});
@@ -68,10 +55,15 @@ const NovoVideo = () => {
     if (Object.keys(errors).length > 0) {
       return;
     }
+    let qualCategoria = "";
+    if (formData.categoria === "Front-End") {
+      qualCategoria = "Front-End";
+    } else {
+      qualCategoria = "Back-End";
+    }
 
     try {
-      const response = await createVideo(formData);
-      console.log("Vídeo criado com sucesso:", response);
+      await addVideo(formData, qualCategoria);
       setShowModal(true);
       resetForm();
     } catch (error) {
@@ -107,9 +99,9 @@ const NovoVideo = () => {
             name="categoria"
             value={formData.categoria}
             onChange={handleChange}
-            options={categorias.map((item, index) => (
-              <option key={index} value={item.categoria}>
-                {item.categoria}
+            options={categories.map((category) => (
+              <option key={category.id} value={category.categoria}>
+                {category.categoria}
               </option>
             ))}
             error={formErrors.categoria}
@@ -119,20 +111,20 @@ const NovoVideo = () => {
         </div>
         <div className={styles.inputs}>
           <Input
-            name="imagem"
+            name="capa"
             placeholder="O link é obrigatório"
-            value={formData.imagem}
+            value={formData.capa}
             onChange={handleChange}
-            error={formErrors.imagem}
+            error={formErrors.capa}
           >
             Imagem
           </Input>
           <Input
-            name="video"
+            name="link"
             placeholder="Digite o link do vídeo"
-            value={formData.video}
+            value={formData.link}
             onChange={handleChange}
-            error={formErrors.video}
+            error={formErrors.link}
           >
             Video
           </Input>

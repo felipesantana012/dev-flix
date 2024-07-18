@@ -1,23 +1,75 @@
-// services/api.jsx
-import axios from "axios";
+// import axios from "axios";
 
-const URL_API = "http://localhost:3000/videos";
+// const API_URL = "http://localhost:3000/videos";
 
-export const fetchVideos = async () => {
-  try {
-    const response = await axios.get(URL_API);
-    return response.data;
-  } catch (error) {
-    console.error("Erro ao buscar vídeos da API:", error.message);
-    throw new Error("Erro ao buscar vídeos da API");
-  }
+// const API_URL =
+//   "https://my-json-server.typicode.com/felipesantana012/git-api-DevFlix/videos";
+
+// export const fetchVideos = async () => {
+//   const response = await fetch(API_URL);
+//   const data = await response.json();
+//   return data;
+// };
+
+// // Função para adicionar um novo vídeo à alguma categoria de videos
+// export const addVideoCategoria = async (newVideo, qualCategoria) => {
+//   try {
+//     const response = await axios.get(API_URL);
+//     const videos = response.data;
+//     console.log("videos", videos);
+
+//     const minhaCategory = videos.find(
+//       (video) => video.categoria === qualCategoria
+//     );
+//     console.log("Categoria", minhaCategory);
+
+//     if (minhaCategory) {
+//       minhaCategory.itens.push(newVideo);
+
+//       // Enviar a atualização para o servidor
+//       await axios.put(`${API_URL}/${minhaCategory.id}`, minhaCategory, {
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//       });
+//     } else {
+//       throw new Error("Categoria não encontrada.");
+//     }
+//   } catch (error) {
+//     console.error("Error adding video:", error.message);
+//     throw error;
+//   }
+// };
+
+//FUNCOES UTILIZANDO O ARQUIVO LOCAL
+import videos from "../json/db.json";
+
+// Função para buscar vídeos
+export const fetchVideos = () => {
+  // Simula uma chamada à API retornando os dados importados
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(videos.videos), 1000);
+  });
 };
 
-export const createVideo = async (videoData) => {
-  try {
-    await axios.post(URL_API, videoData);
-  } catch (error) {
-    console.error("Erro ao criar vídeo na API:", error.message);
-    throw new Error("Erro ao criar vídeo na API");
-  }
+// Função para adicionar um novo vídeo a uma categoria
+export const addVideoCategoria = (newVideo, qualCategoria) => {
+  // Simula uma chamada à API atualizando os dados importados
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      try {
+        const category = videos.videos.find(
+          (video) => video.categoria === qualCategoria
+        );
+        if (category) {
+          category.itens.push(newVideo);
+          resolve();
+        } else {
+          reject(new Error("Categoria não encontrada."));
+        }
+      } catch (error) {
+        reject(error);
+      }
+    }, 1000);
+  });
 };

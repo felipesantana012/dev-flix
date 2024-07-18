@@ -1,14 +1,12 @@
 import styles from "./Carrosel.module.css";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useVideosData from "../../hooks/useVideosData";
 import NomeCategoria from "../NomeCategoria";
+import useVideos from "../../hooks/useVideos";
 
 const Carrosel = () => {
-  const data = useVideosData();
-  if (!Array.isArray(data)) {
-    return <p>Sem dados disponíveis para exibição</p>;
-  }
+  const { todosItens } = useVideos();
+
   return (
     <section className={styles.container}>
       <Swiper
@@ -17,7 +15,7 @@ const Carrosel = () => {
         navigation
         className={styles.carroselContainer}
       >
-        {data.map((item, index) => (
+        {todosItens.map((item, index) => (
           <SwiperSlide
             key={index}
             style={{ backgroundImage: `url(${item.capa})` }}

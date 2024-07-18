@@ -8,6 +8,7 @@ const Select = ({ children, name, value, onChange, options, error }) => {
     >
       {children}
       <select id={name} name={name} value={value} onChange={onChange}>
+        <option value="">Escolha uma Categoria</option>
         {options}
       </select>
       {error && <p className={styles.errorMessage}>{error}</p>}

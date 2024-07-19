@@ -1,17 +1,19 @@
 import React, { createContext, useState, useEffect } from "react";
 import { useLoading } from "./LoadingContext.jsx";
 
-import { fetchVideos } from "../services/api.jsx";
-import {
-  addVideoCategoria,
-  deleteVideoCategoria,
-} from "../services/videoService.jsx";
-
+//IMPORTS PARA UTILIZAR LOGICA DA API DO JSON SERVER
+// import { fetchVideos } from "../services/api.jsx";
 // import {
-//   fetchVideos,
 //   addVideoCategoria,
 //   deleteVideoCategoria,
-// } from "../json/apiLocal.jsx";
+// } from "../services/videoService.jsx";
+
+//IMPORTS PARA UTILIZAR LOGICA DA MEMORIA LOCAL
+import {
+  fetchVideos,
+  addVideoCategoria,
+  deleteVideoCategoria,
+} from "../json/apiLocal.jsx";
 
 export const VideoContext = createContext();
 

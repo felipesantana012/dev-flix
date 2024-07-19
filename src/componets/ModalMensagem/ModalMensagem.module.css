@@ -11,8 +11,8 @@
 }
 
 .modal {
-  background-color: #000000;
-  padding: 20px;
+  background-color: #000000b6;
+  padding: 1.2rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -20,13 +20,13 @@
 .closeBtn {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #2271d1;
-  color: #fff;
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
   border: none;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .closeBtn:hover {
-  background-color: #1e5aa7;
+  opacity: 0.8;
 }

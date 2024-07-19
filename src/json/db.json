@@ -13,24 +13,27 @@
         },
         {
           "id": 2,
-          "titulo": "Um componente no espaço",
+          "titulo": "Um componente",
           "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img1.png",
           "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste.",
+          "categoria": "Front-End"
         },
         {
           "id": 3,
           "titulo": "HTML e CSS",
           "capa": "https://i.pinimg.com/564x/48/52/6a/48526a98493907f2dc33893a718ba1df.jpg",
-          "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+          "link": "https://www.youtube.com/ebed/N1BSG02z-Mw",
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste.",
+          "categoria": "Front-End"
         },
         {
           "id": 4,
-          "titulo": "Dart, o Caçador de Andróides",
+          "titulo": "Dart, o Caçador",
           "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
           "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste.",
+          "categoria": "Front-End"
         }
       ],
       "id": "1"
@@ -41,17 +44,11 @@
       "itens": [
         {
           "id": 1,
-          "titulo": "Aprendendo Node JS",
+          "titulo": "Aprendendo Node",
           "capa": "https://i.pinimg.com/564x/08/86/77/0886779176db12da5565ca4b9541e2b8.jpg",
           "link": "https://www.youtube.com/embed/ypvGqZGJBls",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-        },
-        {
-          "id": 2,
-          "titulo": "Java Avançado",
-          "capa": "https://i.pinimg.com/564x/07/80/c5/0780c51a8c2ee0dc821af36c9affb6cf.jpg",
-          "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
+          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste.",
+          "categoria": "Back-End"
         },
         {
           "id": 3,

@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const API_URL =
-  "https://my-json-server.typicode.com/felipesantana012/git-api-DevFlix/videos";
-// const API_URL = "http://localhost:3000/videos";
+// const API_URL =
+//   "https://my-json-server.typicode.com/felipesantana012/git-api-DevFlix/videos";
+const API_URL = "http://localhost:3000/videos";
 
 const fetchData = async (url) => {
   try {
@@ -26,6 +26,8 @@ const updateData = async (url, data) => {
     throw new Error("Erro ao atualizar dados.");
   }
 };
+
+export const updateVideo = (id, video) => updateData(`${API_URL}/${id}`, video);
 
 export const fetchVideos = () => fetchData(API_URL);
 

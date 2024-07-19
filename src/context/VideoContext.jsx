@@ -2,18 +2,19 @@ import React, { createContext, useState, useEffect } from "react";
 import { useLoading } from "./LoadingContext.jsx";
 
 //IMPORTS PARA UTILIZAR LOGICA DA API DO JSON SERVER
-// import { fetchVideos } from "../services/api.jsx";
-// import {
-//   addVideoCategoria,
-//   deleteVideoCategoria,
-// } from "../services/videoService.jsx";
-
-//IMPORTS PARA UTILIZAR LOGICA DA MEMORIA LOCAL
+import { fetchVideos } from "../services/api.jsx";
 import {
-  fetchVideos,
   addVideoCategoria,
   deleteVideoCategoria,
-} from "../json/apiLocal.jsx";
+  updateVideoCategoria,
+} from "../services/videoService.jsx";
+
+//IMPORTS PARA UTILIZAR LOGICA DA MEMORIA LOCAL
+// import {
+//   fetchVideos,
+//   addVideoCategoria,
+//   deleteVideoCategoria,
+// } from "../json/apiLocal.jsx";
 
 export const VideoContext = createContext();
 
@@ -87,9 +88,20 @@ export const VideoProvider = ({ children }) => {
       hideLoading();
     }
   };
+
+  const updateVideo = async (categoria, updatedVideo) => {
+    showLoading();
+    try {
+      await updateVideoCategoria(categoria, updatedVideo);
+      const data = await fetchVideos();
+      setCategories(data);
+    } finally {
+      hideLoading();
+    }
+  };
   return (
     <VideoContext.Provider
-      value={{ categories, todosItens, addVideo, deleteVideo }}
+      value={{ categories, todosItens, addVideo, deleteVideo, updateVideo }}
     >
       {children}
     </VideoContext.Provider>

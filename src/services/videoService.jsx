@@ -15,6 +15,18 @@ const removeVideoFromCategory = (category, titulo) => {
   category.itens = category.itens.filter((item) => item.titulo !== titulo);
 };
 
+// Atualiza um vídeo existente na categoria.
+const updateVideoInCategory = (category, updatedVideo) => {
+  const index = category.itens.findIndex((item) => item.id === updatedVideo.id);
+  if (index !== -1) {
+    category.itens[index] = updatedVideo;
+  } else {
+    throw new Error("Vídeo não encontrado na categoria.");
+  }
+};
+
+//-------------------FUNÇÕES----------------
+
 // Função para adicionar um novo vídeo a uma categoria
 export const addVideoCategoria = async (newVideo, qualCategoria) => {
   const videos = await fetchVideos();
@@ -34,6 +46,18 @@ export const deleteVideoCategoria = async (categoria, titulo) => {
   const category = findCategory(videos, categoria);
   if (category) {
     removeVideoFromCategory(category, titulo);
+    await updateCategory(category.id, category);
+  } else {
+    throw new Error("Categoria não encontrada.");
+  }
+};
+
+// Função para atualizar um vídeo de uma categoria
+export const updateVideoCategoria = async (categoria, updatedVideo) => {
+  const videos = await fetchVideos();
+  const category = findCategory(videos, categoria);
+  if (category) {
+    updateVideoInCategory(category, updatedVideo);
     await updateCategory(category.id, category);
   } else {
     throw new Error("Categoria não encontrada.");

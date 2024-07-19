@@ -2,7 +2,7 @@ import styles from "./Card.module.css";
 import BotaoDeAcoes from "../BotaoDeAcoes";
 import { Link } from "react-router-dom";
 
-const Card = ({ capa, titulo, link, categoria, onDelete }) => {
+const Card = ({ capa, titulo, link, categoria, onDelete, onEdit }) => {
   const handleDelete = () => {
     onDelete(categoria, titulo);
   };
@@ -20,7 +20,9 @@ const Card = ({ capa, titulo, link, categoria, onDelete }) => {
         <BotaoDeAcoes icone="lixeira" onClick={handleDelete}>
           Lixeira
         </BotaoDeAcoes>
-        <BotaoDeAcoes icone="editar">Editar</BotaoDeAcoes>
+        <BotaoDeAcoes icone="editar" onClick={onEdit}>
+          Editar
+        </BotaoDeAcoes>
       </div>
     </div>
   );

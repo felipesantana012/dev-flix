@@ -2,9 +2,22 @@ import NomeCategoria from "../NomeCategoria";
 import styles from "./Categorias.module.css";
 import Card from "../Card";
 import useVideos from "../../hooks/useVideos";
+import ModalEditarCard from "../ModalEditarCard";
+import { useState } from "react";
 
 const Categorias = () => {
   const { categories, deleteVideo } = useVideos();
+  const [editingItem, setEditingItem] = useState(null);
+
+  const handleEdit = (item, categoria) => {
+    setEditingItem({ ...item, categoria });
+  };
+
+  const closeModal = () => {
+    setModalVisible(false);
+    setSelectedCard(null);
+  };
+
   return (
     <section className={styles.container}>
       {categories.map((item, index) => (
@@ -22,11 +35,18 @@ const Categorias = () => {
                   titulo={element.titulo}
                   categoria={item.categoria}
                   onDelete={deleteVideo}
+                  onEdit={() => handleEdit(element, item.categoria)}
                 />
               ))}
           </div>
         </div>
       ))}
+      {editingItem && (
+        <ModalEditarCard
+          item={editingItem}
+          onClose={() => setEditingItem(null)}
+        />
+      )}
     </section>
   );
 };

@@ -1,0 +1,109 @@
+.modalEditarCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.modalEditarCard form {
+  border-radius: 0.5rem;
+  border: 0.3rem solid var(--cor-secundaria-azul);
+  background-color: rgb(4, 4, 14);
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+  gap: 0.4rem;
+}
+.modalEditarCard form h2 {
+  color: var(--cor-azul);
+  opacity: 0.8;
+}
+
+.estilo_inputs {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1 1 48%;
+  min-width: 15rem;
+}
+
+.input_item {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline-style: none;
+  border: 0.2rem solid var(--cor-azul);
+  background-color: transparent;
+  color: var(--cor-branca);
+}
+
+.estilo_inputs select {
+  font-weight: 200;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline-style: none;
+  border: 0.2rem solid var(--cor-azul);
+  background-color: transparent;
+  color: var(--cor-branca);
+  opacity: 0.6;
+}
+
+.estilo_inputs select option {
+  background-color: var(--cor-secundaria-preto);
+}
+
+.inputDescricao {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputDescricao label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.inputDescricao textarea {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline-style: none;
+  border: var(--bordas-principal);
+  background-color: transparent;
+  color: var(--cor-branca);
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.fechar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  border: 0.2rem solid white;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+}
+
+.fechar i {
+  color: white;
+  font-weight: 900;
+}

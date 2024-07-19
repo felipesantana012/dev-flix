@@ -16,16 +16,6 @@ const ModalEditarCard = ({ item, onClose }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const resetForm = () => {
-    setFormData({
-      titulo: "",
-      categoria: "",
-      capa: "",
-      link: "",
-      descricao: "",
-    });
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateVideo(formData.categoria, formData);

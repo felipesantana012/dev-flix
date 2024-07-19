@@ -2,7 +2,11 @@ import styles from "./Card.module.css";
 import BotaoDeAcoes from "../BotaoDeAcoes";
 import { Link } from "react-router-dom";
 
-const Card = ({ capa, titulo, link }) => {
+const Card = ({ capa, titulo, link, categoria, onDelete }) => {
+  const handleDelete = () => {
+    onDelete(categoria, titulo);
+  };
+
   return (
     <div className={styles.card}>
       <article className={styles.imagem}>
@@ -13,7 +17,9 @@ const Card = ({ capa, titulo, link }) => {
       </article>
 
       <div className={styles.btns}>
-        <BotaoDeAcoes icone="lixeira">Lixeira</BotaoDeAcoes>
+        <BotaoDeAcoes icone="lixeira" onClick={handleDelete}>
+          Lixeira
+        </BotaoDeAcoes>
         <BotaoDeAcoes icone="editar">Editar</BotaoDeAcoes>
       </div>
     </div>

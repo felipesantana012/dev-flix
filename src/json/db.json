@@ -24,13 +24,6 @@
           "capa": "https://i.pinimg.com/564x/48/52/6a/48526a98493907f2dc33893a718ba1df.jpg",
           "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
           "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-        },
-        {
-          "id": 4,
-          "titulo": "Dart, o Caçador de Andróides",
-          "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
-          "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
         }
       ],
       "id": "1"
@@ -58,13 +51,6 @@
           "titulo": "php com laravel",
           "capa": "https://i.pinimg.com/564x/68/b4/c3/68b4c36f5ad39e78ee92e653f4a5e6e1.jpg",
           "link": "https://www.youtube.com/embed/N1BSG02z-Mw",
-          "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
-        },
-        {
-          "id": 4,
-          "titulo": "Python no Back",
-          "capa": "https://i.pinimg.com/564x/1d/8e/7b/1d8e7b059e313fc47711d030472f1291.jpg",
-          "link": "https://www.youtube.com/embed/LLmBWjF6F8M",
           "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab laudantium laboriosam numquam soluta, ullam eaque reprehenderit saepe qui doloremque quam sequi neque ex. Doloremque quo culpa facere sit iste."
         }
       ],

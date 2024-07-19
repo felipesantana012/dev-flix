@@ -4,7 +4,7 @@ import Card from "../Card";
 import useVideos from "../../hooks/useVideos";
 
 const Categorias = () => {
-  const { categories } = useVideos();
+  const { categories, deleteVideo } = useVideos();
   return (
     <section className={styles.container}>
       {categories.map((item, index) => (
@@ -20,6 +20,8 @@ const Categorias = () => {
                   capa={element.capa}
                   link={element.link}
                   titulo={element.titulo}
+                  categoria={item.categoria}
+                  onDelete={deleteVideo}
                 />
               ))}
           </div>

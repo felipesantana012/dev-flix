@@ -1,6 +1,17 @@
 import React, { createContext, useState, useEffect } from "react";
-import { fetchVideos, addVideoCategoria } from "../services/api.jsx";
 import { useLoading } from "./LoadingContext.jsx";
+
+import { fetchVideos } from "../services/api.jsx";
+import {
+  addVideoCategoria,
+  deleteVideoCategoria,
+} from "../services/videoService.jsx";
+
+// import {
+//   fetchVideos,
+//   addVideoCategoria,
+//   deleteVideoCategoria,
+// } from "../json/apiLocal.jsx";
 
 export const VideoContext = createContext();
 
@@ -64,8 +75,20 @@ export const VideoProvider = ({ children }) => {
     }
   };
 
+  const deleteVideo = async (categoria, titulo) => {
+    showLoading();
+    try {
+      await deleteVideoCategoria(categoria, titulo);
+      const data = await fetchVideos();
+      setCategories(data);
+    } finally {
+      hideLoading();
+    }
+  };
   return (
-    <VideoContext.Provider value={{ categories, todosItens, addVideo }}>
+    <VideoContext.Provider
+      value={{ categories, todosItens, addVideo, deleteVideo }}
+    >
       {children}
     </VideoContext.Provider>
   );
